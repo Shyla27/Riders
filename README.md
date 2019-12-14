@@ -9,16 +9,16 @@
      SHEILA BERNICE
     
  ### USER STORIES
-    *As a user i want to create an account
+    * As a user i want to create an account
     * As a user i want to be able to login to the app
-    *As a user i want to search by location
+    * As a user i want to search by location
     * As a user i want to view my profile
     * As a user i want to add photos in my page
     * As  a user i want to posts by my friends
 
  ### GET IT 
-    *  Clone this repository `link` in any  local machine 
-    *   Open the project in your Android Studio IDE
+    *  Clone this repository `https://github.com/Shyla27/Riders.git` in any  local machine
+    *  Open the project in your Android Studio IDE
     *  After the syncing process  ,run the application in your AVD or android phone 
     
  ###  TECH USED 

@@ -16,6 +16,9 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/linearLayout">
 
+
+
+
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
@@ -73,5 +76,14 @@
         android:textColor="@color/heads"
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/facebook"
+        android:padding="10dp"
+        android:text="LOGIN WITH FACEBOOK" />
 
 </RelativeLayout>

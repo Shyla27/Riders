@@ -5,6 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/color">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/loginTextViw">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="Name"
+        android:nextFocusDown="@+id/passwordEditText"
+        android:padding="10dp"
+        android:layout_
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+
+
+
+</LinearLayout>
+
 
     <LinearLayout
         android:orientation="vertical"

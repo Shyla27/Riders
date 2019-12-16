@@ -16,4 +16,8 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="about"> MEET SOCIALIZE EXPLORE</string>
+    <string name="title_activity_page">page</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

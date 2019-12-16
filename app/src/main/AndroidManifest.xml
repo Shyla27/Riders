@@ -9,9 +9,7 @@
         android:roundIcon="@drawable/ic_rename"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"></activity>
         <activity android:name=".posts" />
-        <activity android:name=".Splash" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

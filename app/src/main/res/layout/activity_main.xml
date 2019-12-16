@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/brn"
+    android:background="@drawable/original"
     tools:context=".MainActivity">
 
 
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:text="            GET STARTED"
+        android:text="        GET STARTED"
 
         android:textColor="@color/White"
         android:textSize="30dp"

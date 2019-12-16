@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vans"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+>
+
+      <Button
+        android:id="@+id/button"
+        android:layout_width="202dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loginb"
+        android:gravity="center"
+        android:text="Sign Up"
+          android:textColor="@color/White"
+          android:textSize="30dp"
+          android:textStyle="bold|italic"
+        tools:ignore="MissingConstraints,MissingCostraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="202dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loginb"
+        android:gravity="center"
+        android:text="Signin"
+        android:textColor="@color/White"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="558dp" />
+    />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

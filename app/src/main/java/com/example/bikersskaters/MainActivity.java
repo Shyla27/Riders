@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MainActivity extends AppCompatActivity  {
 
     private Button mRideButton;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this , LoginActivity.class);
+        Intent intent = new Intent(MainActivity.this , ProfileActivity.class);
         startActivity(intent);
     }
                     });

@@ -8,10 +8,46 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_cycling"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="558dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+            android:text="@string/us"
+
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+             />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="bottom"
+
 >
 
 
@@ -24,7 +60,7 @@
         android:gravity="center"
         android:text="Sign Up"
 
-          android:textColor="@color/White"
+          android:textColor="@color/heads"
           android:textSize="30dp"
           android:textStyle="bold|italic"
         tools:ignore="MissingConstraints,MissingCostraints"
@@ -38,15 +74,14 @@
         android:layout_gravity="center"
         android:background="@drawable/loginb"
         android:gravity="center"
-        android:text="Signin"
-        android:textColor="@color/White"
+        android:text="Sign In"
+        android:textColor="@color/heads"
         android:textSize="30dp"
         android:textStyle="bold|italic"
 
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="180dp"
         tools:layout_editor_absoluteY="558dp" />
-    />
 
     </LinearLayout>
 

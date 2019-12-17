@@ -63,7 +63,7 @@
 
             android:textSize="15sp"
             android:text="Don't have an account? Sign up here!"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/heads"
             android:id="@+id/registerTextView"
             android:layout_gravity="center_horizontal" />
 

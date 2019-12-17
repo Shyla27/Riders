@@ -28,6 +28,8 @@
             android:inputType="textEmailAddress"
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
+            app:fontFamily="cursive"
+
             android:layout_marginBottom="10dp"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
@@ -38,6 +40,8 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:hint="Password"
+            app:fontFamily="cursive"
+
             android:inputType="textPassword"
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
@@ -51,7 +55,8 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Log in"
-
+            android:textStyle="bold"
+            app:fontFamily="cursive"
             android:background="@drawable/loginb"
             android:layout_marginTop="15dp"/>
 
@@ -60,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
-
+            app:fontFamily="cursive"
             android:textSize="15sp"
             android:text="Don't have an account? Sign up here!"
             android:textColor="@color/heads"
@@ -74,6 +79,7 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="30dp"
+        app:fontFamily="cursive"
         android:textStyle="bold"
         android:textColor="@color/heads"
         android:layout_above="@+id/linearLayout"

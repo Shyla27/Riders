@@ -7,40 +7,44 @@
     android:background="@drawable/color"
     android:orientation="vertical">
 
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="@string/us"
+            tools:ignore="MissingConstraints" />
+
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
 
         tools:ignore="MissingConstraints">
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_width="356dp"
+            android:layout_height="342dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="1dp"
             android:gravity="center"
-            app:srcCompat="@drawable/ic_cycling"
+            app:srcCompat="@drawable/ic_blue"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="558dp"
 
 
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="75dp"
-            android:text="@string/us"
-
-            android:textSize="20sp"
-            android:textStyle="italic|bold"
-             />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,7 +63,7 @@
         android:background="@drawable/loginb"
         android:gravity="center"
         android:text="Sign Up"
-
+          app:fontFamily="cursive"
           android:textColor="@color/heads"
           android:textSize="30dp"
           android:textStyle="bold|italic"
@@ -75,6 +79,7 @@
         android:background="@drawable/loginb"
         android:gravity="center"
         android:text="Sign In"
+        app:fontFamily="cursive"
         android:textColor="@color/heads"
         android:textSize="30dp"
         android:textStyle="bold|italic"
@@ -82,6 +87,8 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="180dp"
         tools:layout_editor_absoluteY="558dp" />
+
+
 
     </LinearLayout>
 

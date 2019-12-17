@@ -2,35 +2,234 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/original"
-    tools:context=".MainActivity">
-
-
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:background="@drawable/color">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  MEGA RIDERS"
-        android:textColor="@color/White"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="43dp"
+        android:text="MEGA RIDERS"
         android:textSize="50sp"
-        app:fontFamily="cursive"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:fontFamily="cursive" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="30dp"
+                app:contentPaddingTop="20dp"
+                app:cardElevation="10dp"
+                android:background="@color/heads"
+                app:cardBackgroundColor="#5FFBF1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="BIKING"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        app:fontFamily="cursive"
+                        android:padding="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEET OTHER BIKERS "
+                        android:layout_marginTop="120dp"
+                        android:gravity="center"
+                        app:fontFamily="cursive"
+                        android:paddingLeft="20dp"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bl"
+                        android:layout_marginTop="180dp"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="30dp"
+                app:contentPaddingTop="20dp"
+                app:cardElevation="10dp"
+                android:background="#000000"
+                app:cardBackgroundColor="#5FFBF1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="SKATERS"
+                        app:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        android:padding="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" VANS OF THE WALL "
+                        android:layout_marginTop="120dp"
+                        app:fontFamily="cursive"
+                        android:paddingLeft="20dp"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vans"
+                        android:layout_marginTop="180dp"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="30dp"
+                app:contentPaddingTop="20dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="#5FFBF1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="MOTORSPORT"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        app:fontFamily="cursive"
+                        android:padding="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAST AND FURIOUS "
+                        android:layout_marginTop="120dp"
+                        android:paddingLeft="20dp"
+                        app:fontFamily="cursive"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/col"
+                        android:layout_marginTop="180dp"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4jh"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="30dp"
+                app:contentPaddingTop="20dp"
+                app:cardElevation="10dp"
+                android:background="@color/heads"
+                app:cardBackgroundColor="#5FFBF1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="CHALLANGES"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        app:fontFamily="cursive"
+                        android:padding="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JOIN IN THE NEWEST CHALLANGES "
+                        android:layout_marginTop="120dp"
+                        android:paddingLeft="20dp"
+                        app:fontFamily="cursive"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:id="@+id/image4k"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/usiku"
+                        android:layout_marginTop="180dp"
+                        android:layout_alignParentBottom="true"
+                        android:padding="20dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
 
-</LinearLayout>
+
+
+
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -43,8 +242,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:text="        GET STARTED"
-
-        android:textColor="@color/White"
+        app:fontFamily="cursive"
+        android:textColor="@color/heads"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="90dp"
         tools:layout_editor_absoluteY="539dp"
@@ -52,3 +251,4 @@
 
 </LinearLayout>
 </RelativeLayout>
+

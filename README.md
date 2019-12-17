@@ -19,7 +19,7 @@
  ### GET IT 
     *  Clone this repository `https://github.com/Shyla27/Riders.git` in any  local machine
     *  Open the project in your Android Studio IDE
-    *  After the syncing process  ,run the application in your AVD or android phone 
+    *  After the syncing process ,run the application in your AVD or android phone 
     
  ###  TECH USED 
     *  JAVA  for the functionality and logic 

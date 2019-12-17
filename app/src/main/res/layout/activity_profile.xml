@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/vans"
+    android:background="@drawable/color"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,6 +23,7 @@
         android:background="@drawable/loginb"
         android:gravity="center"
         android:text="Sign Up"
+
           android:textColor="@color/White"
           android:textSize="30dp"
           android:textStyle="bold|italic"

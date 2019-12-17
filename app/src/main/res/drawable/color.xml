@@ -6,13 +6,13 @@
     android:type="radial"
     android:centerX="50%"
     android:centerY="50%"
-    android:startColor="#FF110230"
-    android:endColor="#FF008080"
+    android:startColor="#5FFBF1"
+    android:endColor="#845EC2"
     android:gradientRadius="100"/>
 
        <gradient
            android:type="linear"
-           android:startColor="#FF110230"
-           android:endColor="#FF008080"
+           android:startColor="#5FFBF1"
+           android:endColor="#845EC2"
            android:angle="45"/>
    </shape>

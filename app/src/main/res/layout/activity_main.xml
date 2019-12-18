@@ -58,6 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="MEET OTHER BIKERS "
+                        android:textSize="30sp"
                         android:layout_marginTop="120dp"
                         android:gravity="center"
                         app:fontFamily="cursive"
@@ -107,6 +108,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" VANS OF THE WALL "
+                        android:textSize="30sp"
+
                         android:layout_marginTop="120dp"
                         app:fontFamily="cursive"
                         android:paddingLeft="20dp"
@@ -155,6 +158,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="FAST AND FURIOUS "
+                        android:textSize="30sp"
+
                         android:layout_marginTop="120dp"
                         android:paddingLeft="20dp"
                         app:fontFamily="cursive"
@@ -203,6 +208,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="JOIN IN THE NEWEST CHALLANGES "
+                        android:textSize="30sp"
+
                         android:layout_marginTop="120dp"
                         android:paddingLeft="20dp"
                         app:fontFamily="cursive"

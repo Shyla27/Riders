@@ -26,7 +26,8 @@
     *  XML  for design 
     
  ### Bugs 
-
+    * Getting the API to use - initially i was to use google maps but decided to use firebase database  to filter out the locations 
+    * 
  
  ### CONTACT ME 
  If you have any Questions please reach out to me via `sheilabernicew@gmail.com` or `+254 795 811714`

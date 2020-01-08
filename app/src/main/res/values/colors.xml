@@ -14,7 +14,7 @@
     <color name="colo"> #5EAFA6</color>
     <color name="page">#068971</color>
     <color name="error"> #9D4C32</color>
-
+<color name="secondaryTextColor">#068971</color>
 
 
 </resources>

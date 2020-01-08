@@ -25,6 +25,7 @@
     *  JAVA  for the functionality and logic 
     *  XML  for design 
     
+    
  ### Bugs 
     * Getting the API to use - initially i was to use google maps but decided to use firebase database  to filter out the locations 
     * 

@@ -1,4 +1,4 @@
 package com.example.bikersskaters;
 
-@interface BindView {
+interface OnMapReadyCallback {
 }

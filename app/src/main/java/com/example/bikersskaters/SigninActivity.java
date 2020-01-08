@@ -23,7 +23,7 @@ public class SigninActivity  extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SigninActivity.this, "Welcome" ,Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(SigninActivity.this, postsActivity.class);
+                Intent intent = new Intent(SigninActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
         });

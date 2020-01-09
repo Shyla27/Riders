@@ -21,18 +21,18 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
 private static final String TAG = "RecyclerViewAdapter";
 //variables
 
-   DashboardActivity mNames = new DashboardActivity();
-    private ArrayList<String> mImages = new ArrayList<>();
-     Context mContext;
+//   DashboardActivity mNames = new DashboardActivity();
+    private ArrayList<Integer> mImages;
+    private ArrayList<String> mNames;
+
+    Context mContext;
 
 
-    public RecyclerViewAdapter(DashboardActivity names, ArrayList<String> images, ArrayList<String> context) {
-
-        mImages= images;
-        mNames= names;
-
+    public RecyclerViewAdapter(ArrayList<String> mNames, ArrayList<Integer> mImages, Context mContext) {
+        this.mNames = mNames;
+        this.mImages = mImages;
+        this.mContext = mContext;
     }
-
 
     @NonNull
     @Override
@@ -47,7 +47,6 @@ private static final String TAG = "RecyclerViewAdapter";
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 Log.d(TAG, "onBindViewHolder:called.");
         Glide.with(mContext)
-                .asBitmap()
                 .load(mImages.get(position))
                 .into(holder.imageView);
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "494835132546",
+    "firebase_url": "https://bikers-842ea.firebaseio.com",
+    "project_id": "bikers-842ea",
+    "storage_bucket": "bikers-842ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494835132546:android:23f7dcf8b32ea7acc8ac9b",
+        "android_client_info": {
+          "package_name": "com.example.bikersskaters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494835132546-0vu1hml46jsvlipgmdl2nvqecgub8dr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bikersskaters",
+            "certificate_hash": "cd68ec777c90c09507d5c22006179316514cdc22"
+          }
+        },
+        {
+          "client_id": "494835132546-a0kjccifpp1rc7dguchc67f81v7in025.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaLTarCaDOkp7KCfryXOao0kd15Di9x8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494835132546-a0kjccifpp1rc7dguchc67f81v7in025.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008080</color>
+    <color name="colorPrimary">#8EF4EC</color>
     <color name="colorPrimaryDark">#5F9EA0</color>
     <color name="darkKhaki">#BDB76B</color>
     <color name="khaki">#F0E68C</color>
-    <color name="colorAccent">#008080</color>
+    <color name="colorAccent">#845EC2</color>
     <color name="White">#fafafa</color>
     <color name="heads"> #041515</color>
     <color name="facebook">#00008B</color>

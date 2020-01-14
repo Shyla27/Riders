@@ -3,18 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/nav_chats"
-    android:background="@drawable/color"
-    tools:context=".ui.ChatFragment">
+    android:id="@+id/nav_profile"
+    tools:context=".SearchFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text=" Let's Chat"
-        android:textSize="30sp"
-        android:textColor="@color/error"
-        android:textStyle="bold|italic"
-        android:fontFamily="cursive"
-        />
+        android:text="@string/hello_blank_fragment" />
+
+
 
 </FrameLayout>

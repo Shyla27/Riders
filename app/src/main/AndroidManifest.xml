@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bikersskaters">
 
-    <uses-sdk android:targetSdkVersion="19" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -34,11 +33,13 @@
             android:value="AIzaSyCfsnSvoivyEbsH9YN6OI31CDQZmbMp4N8" />
 
 
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".SigninActivity" />
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.SigninActivity" />
+        <activity android:name=".ui.ProfileActivity"/>
+        <activity android:name=".ui.DashboardActivity"
+            />
+        <activity android:name=".ui.MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

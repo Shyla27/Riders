@@ -1,8 +1,10 @@
-package com.example.bikersskaters;
+package com.example.bikersskaters.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.bikersskaters.R;
 
 
 public class postsActivity extends AppCompatActivity {

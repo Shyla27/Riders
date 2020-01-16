@@ -3,32 +3,131 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/color"
+    android:orientation="horizontal"
+    tools:context=".ui.postsActivity">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:orientation="vertical"
+
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+<!--
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
-
-
-
-    <ImageView
+    <com.brouding.doubletaplikeview.DoubleTapLikeView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitStart"
-        android:src="@drawable/usiku" />
+        app:src="@drawable/bl"
+        app:icon="@drawable/ic_heart"
+        app:scaleType="fitCenter"
+        app:disableAnimation="false"
+        app:adjustViewBounds="true"
+        app:doubleTapIn="200" />
 
 
-    <ImageView
+    <com.brouding.doubletaplikeview.DoubleTapLikeView
+        android:id="@+id/layout_double_tap_like"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitCenter"
-        android:src="@drawable/vans" />
+        app:src="@drawable/ken"
+        app:icon="@drawable/ic_heart"
+        app:scaleType="fitCenter"
+        app:disableAnimation="false"
+        app:adjustViewBounds="true"
+        app:doubleTapIn="200" />
 
 
 
 
-    <ImageView
+    <com.brouding.doubletaplikeview.DoubleTapLikeView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitEnd"
-        android:src="@drawable/bl" />
+        app:src="@drawable/lady"
+        app:icon="@drawable/ic_heart"
+        app:disableAnimation="false"
+        app:adjustViewBounds="true"
+        app:doubleTapIn="200" />
 
+    <com.brouding.doubletaplikeview.DoubleTapLikeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:src="@drawable/usiku"
+        app:icon="@drawable/ic_heart"
+        app:disableAnimation="false"
+        app:adjustViewBounds="true"
+        app:doubleTapIn="200" />
+    <com.brouding.doubletaplikeview.DoubleTapLikeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:src="@drawable/vans"
+        app:icon="@drawable/ic_heart"
+        app:disableAnimation="false"
+        app:adjustViewBounds="true"
+        app:doubleTapIn="200" />
+
+    <com.brouding.doubletaplikeview.DoubleTapLikeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:src="@drawable/shad"
+        app:icon="@drawable/ic_heart"
+        app:disableAnimation="false"
+        app:adjustViewBounds="true"
+        app:doubleTapIn="200" />
+
+
+</LinearLayout>
+
+
+</ScrollView>
+
+-->
+    </RelativeLayout>
+
+   <!--<SearchView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:queryHint="Search"
+    android:iconifiedByDefault="false"
+    >
+
+</SearchView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listMode"
+        android:layout_marginTop="10dp"
+        >
+
+
+    </ListView>
+-->
 
 </RelativeLayout>

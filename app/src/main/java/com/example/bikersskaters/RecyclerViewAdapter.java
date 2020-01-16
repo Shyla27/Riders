@@ -21,7 +21,6 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
 private static final String TAG = "RecyclerViewAdapter";
 //variables
 
-//   DashboardActivity mNames = new DashboardActivity();
     private ArrayList<Integer> mImages;
     private ArrayList<String> mNames;
 

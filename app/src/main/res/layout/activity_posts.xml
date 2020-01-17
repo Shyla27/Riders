@@ -10,6 +10,19 @@
 
 
 
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search"
+        android:searchIcon="@drawable/ic_search_teal_24dp"
+        android:iconifiedByDefault="false"
+        >
+
+    </SearchView>
+
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,110 +37,67 @@
 
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-
-
-<!--
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <com.brouding.doubletaplikeview.DoubleTapLikeView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:src="@drawable/bl"
-        app:icon="@drawable/ic_heart"
-        app:scaleType="fitCenter"
-        app:disableAnimation="false"
-        app:adjustViewBounds="true"
-        app:doubleTapIn="200" />
+        android:layout_centerInParent="true"
+        android:weightSum="5"
+        android:orientation="horizontal"
+    >
 
+    <ImageButton
+        android:id="@+id/ib1"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:background="@drawable/ic_like"
+        tools:ignore="Suspicious0dp" />
 
-    <com.brouding.doubletaplikeview.DoubleTapLikeView
-        android:id="@+id/layout_double_tap_like"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:src="@drawable/ken"
-        app:icon="@drawable/ic_heart"
-        app:scaleType="fitCenter"
-        app:disableAnimation="false"
-        app:adjustViewBounds="true"
-        app:doubleTapIn="200" />
+    <ImageButton
+        android:id="@+id/ib2"
+        android:layout_height="wrap_content"
+        android:layout_width="1dp"
+        android:background="@drawable/ic_like"/>
 
+    <ImageButton
+        android:id="@+id/ib3"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:background="@drawable/ic_like"/>
 
+    <ImageButton
+        android:id="@+id/ib4"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:background="@drawable/ic_like"/>
+    <ImageButton
+        android:id="@+id/ib5"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
 
-
-    <com.brouding.doubletaplikeview.DoubleTapLikeView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:src="@drawable/lady"
-        app:icon="@drawable/ic_heart"
-        app:disableAnimation="false"
-        app:adjustViewBounds="true"
-        app:doubleTapIn="200" />
-
-    <com.brouding.doubletaplikeview.DoubleTapLikeView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:src="@drawable/usiku"
-        app:icon="@drawable/ic_heart"
-        app:disableAnimation="false"
-        app:adjustViewBounds="true"
-        app:doubleTapIn="200" />
-    <com.brouding.doubletaplikeview.DoubleTapLikeView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:src="@drawable/vans"
-        app:icon="@drawable/ic_heart"
-        app:disableAnimation="false"
-        app:adjustViewBounds="true"
-        app:doubleTapIn="200" />
-
-    <com.brouding.doubletaplikeview.DoubleTapLikeView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:src="@drawable/shad"
-        app:icon="@drawable/ic_heart"
-        app:disableAnimation="false"
-        app:adjustViewBounds="true"
-        app:doubleTapIn="200" />
-
+        android:background="@drawable/ic_like"/>
 
 </LinearLayout>
 
 
-</ScrollView>
-
--->
-    </RelativeLayout>
-
-   <!--<SearchView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:queryHint="Search"
-    android:iconifiedByDefault="false"
-    >
-
-</SearchView>
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/listMode"
-        android:layout_marginTop="10dp"
-        >
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/bottom"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="600dp"
+        android:fitsSystemWindows="true"
+        android:foregroundGravity="bottom"
+        app:menu="@menu/bottom_nav_student"
+        android:layout_marginRight="0dp" />
 
 
-    </ListView>
--->
 
 </RelativeLayout>

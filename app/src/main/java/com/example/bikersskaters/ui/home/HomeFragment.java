@@ -4,20 +4,24 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.bikersskaters.R;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
 
+    private HomeViewModel homeViewModel;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -32,4 +36,6 @@ public class HomeFragment extends Fragment {
         });
         return root;
     }
+
+
 }

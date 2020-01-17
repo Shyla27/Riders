@@ -1,10 +1,14 @@
 package com.example.bikersskaters.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,16 +17,27 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.bikersskaters.R;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DashboardActivity extends AppCompatActivity  {
+public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
+
+
+    @BindView(R.id.sunset) ImageButton mSunsets;
+
+    private RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
+    private FirebaseRecyclerAdapter adapter;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -32,14 +47,20 @@ public class DashboardActivity extends AppCompatActivity  {
         setContentView(R.layout.activit_dashboard);
         Toolbar toolbar = findViewById(R.id.action_logout);
         setSupportActionBar(toolbar);
-         FloatingActionButton fab = findViewById(R.id.fab);
+
+        //ButterKnife.bind(this);
+
+
+       // mSunsets.setOnClickListener(this);
+        /* FloatingActionButton fab = findViewById(R.id.fab);
          fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "try again", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
+
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -51,9 +72,15 @@ public class DashboardActivity extends AppCompatActivity  {
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-       //
-        // NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+
+        //TODO: Solve null pointer exception
+//        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+/*
+        editText = findViewById(R.id.et);
+        etd = findViewById(R.id.etd);
+        button = findViewById(R.id.btn);
+        recyclerView = findViewById(R.id.list);*/
     }
 
     @Override
@@ -63,13 +90,13 @@ public class DashboardActivity extends AppCompatActivity  {
         return super.onCreateOptionsMenu(menu);
     }
 
-  /*  @Override
-    public boolean onCreateOptionMenu (Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.search, menu);
-        ButterKnife.bind(this);
+    /*  @Override
+      public boolean onCreateOptionMenu (Menu menu) {
+          MenuInflater inflater = getMenuInflater();
+          inflater.inflate(R.menu.search, menu);
+          ButterKnife.bind(this);
 
-    }*/
+      }*/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -82,13 +109,22 @@ public class DashboardActivity extends AppCompatActivity  {
 
     private void logout() {
     }
-/*
-    @Override
-    public boole*/
+
+
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-}
+
+    @Override
+    public void onClick(View v) {
+      /*  if (v ==  mSunsets) {
+            Intent intent = new Intent(DashboardActivity.this, MapsActivity.class);
+            startActivity(intent);
+            finish();
+        }*/
+    }
+    }
+

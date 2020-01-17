@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@drawable/color">
 
@@ -11,6 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 -->
+
+
+
 
 
     <TextView
@@ -27,76 +30,154 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ScrollView
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/color"
+        android:layout_height="match_parent">
 
 
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="50dp">
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp">
 
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@drawable/lady"/>
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
 
-                android:text="@string/us"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#fafaff"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ken"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/us"
+                <com.brouding.doubletaplikeview.DoubleTapLikeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adjustViewBounds="true"
+                    app:disableAnimation="false"
+                    app:doubleTapIn="200"
+                    app:icon="@drawable/ic_heart"
+                    app:scaleType="fitCenter"
+                    app:src="@drawable/bl" />
 
-                android:textSize="20sp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#fafafa"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/sb"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/us"
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:id="@+id/sunset"
+                    app:srcCompat="@drawable/ic_like" />
 
-                android:textSize="20sp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/rome"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/us"
 
-                android:textSize="20sp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/shad"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/us"
+                <com.brouding.doubletaplikeview.DoubleTapLikeView
+                    android:id="@+id/layout_double_tap_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adjustViewBounds="true"
+                    app:disableAnimation="false"
+                    app:doubleTapIn="200"
+                    app:icon="@drawable/ic_heart"
+                    app:scaleType="fitCenter"
+                    app:src="@drawable/ken" />
 
-                android:textSize="20sp"/>
-        </LinearLayout>
-    </ScrollView>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/ic_like" />
+
+
+                <com.brouding.doubletaplikeview.DoubleTapLikeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adjustViewBounds="true"
+                    app:disableAnimation="false"
+                    app:doubleTapIn="200"
+                    app:icon="@drawable/ic_heart"
+                    app:src="@drawable/lady" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/ic_like" />
+
+
+                <com.brouding.doubletaplikeview.DoubleTapLikeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adjustViewBounds="true"
+                    app:disableAnimation="false"
+                    app:doubleTapIn="200"
+                    app:icon="@drawable/ic_heart"
+                    app:src="@drawable/usiku" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/ic_like" />
+
+
+                <com.brouding.doubletaplikeview.DoubleTapLikeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adjustViewBounds="true"
+                    app:disableAnimation="false"
+                    app:doubleTapIn="200"
+                    app:icon="@drawable/ic_heart"
+                    app:src="@drawable/vans" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/ic_like" />
+
+
+                <com.brouding.doubletaplikeview.DoubleTapLikeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adjustViewBounds="true"
+                    app:disableAnimation="false"
+                    app:doubleTapIn="200"
+                    app:icon="@drawable/ic_heart"
+                    app:src="@drawable/shad" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+
+        android:background="@drawable/color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_student" />
+
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:searchIcon="@drawable/ic_search_teal_24dp"
+        android:iconifiedByDefault="false"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="8dp">
+
+    </SearchView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

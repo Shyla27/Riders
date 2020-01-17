@@ -72,7 +72,7 @@ public class SigninActivity  extends AppCompatActivity  implements View.OnClickL
     @Override
     public void onClick(View v) {
         if (v == mLoginTextView) {
-            Intent intent = new Intent(SigninActivity.this, LoginActivity.class);
+            Intent intent = new Intent(SigninActivity.this, DashboardActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
             finish();
@@ -141,7 +141,7 @@ public class SigninActivity  extends AppCompatActivity  implements View.OnClickL
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 final FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
-                    Intent intent = new Intent(SigninActivity.this, postsActivity.class);
+                    Intent intent = new Intent(SigninActivity.this, DashboardActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
